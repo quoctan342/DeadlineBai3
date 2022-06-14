@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <nav class="main-menu" id="main-menu">
+            <ul class="menu">
+                <a href="/">
+                    <li class="menu__item logo--small">
+                        <div class="menu__img"><img src="./Assets/images/logo.png" alt="Logo"></div>
+                    </li>
+                </a>
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/inbox.svg" alt="Inbox"></div>
+                    <p>Inbox</p>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/user.svg" alt="User"></div>
+                    <p>Contact</p>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/book-alt.svg" alt="Content"></div>
+                    <p>Content</p>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/chart-bar.svg" alt="Reports"></div>
+                    <p>Reports</p>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/paper-plane.svg" alt="Growth"></div>
+                    <p>Growth</p>
+                </li>
+                <li id="settings" class="menu__item menu__item--active">
+                    <div class="menu__img"><img src="./Assets/images/cog.svg" alt="Settings"></div>
+                    <p>Settings</p>
+                </li>
+            </ul>
+            <ul class="menu menu--right">
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/bell.svg" alt="Bell"></div>
+                    <div class="menu__content">Notifications</div>
+                </li>
+                <li class="menu__item avatar--small">
+                    <div class="menu__img"><img src="./Assets/images/Avatar.png" alt="Settings"></div>
+                </li>
+            </ul>
+        </nav>
+        <section class="submenu" id="submenu">
+            <button id="showSubmenuButton" class="button__show-submenu button--white button--border-none button--shadow"><img src="./Assets/images/left_arow.svg" alt="Show Submenu"></button>
+            <div class="submenu__header">
+                <h2 class="submenu__title">Settings</h2>
+            </div>
+            <ul class="submenu__body">
+                <li class="submenu__item --active">Canned Responses</li>
+                <li class="submenu__item">Chat widget</li>
+                <li class="submenu__item">Teammate management</li>
+                <li class="submenu__item">Email configuration</li>
+            </ul>
+        </section>
+        <section class="content">
+            <div class="content__header content--space-between">
+                <h1 class="content__title">Create Canned Response</h1>
+                <div class="button__group">
+                    <a href="/" class="button button--secondary button--border-none">Cancel</a>
+                    <button class="button button--primary button--border-none">Create</button>
+                </div>
+            </div>
+            <div class="content__body content--small">
+                <form class="form--fill">
+                    <p class="input__group">
+                        <label for="Category" class="form__label">Category</Label>
+                        <select class="content__selects input--fill">
+                            <option value="0">No category</option>
+                        </select>
+                    </p>
+                    <p class="input__group">
+                        <label for="Shortcut" class="form__label">Shortcut</Label>
+                        <input type="text" placeholder="Enter shortcut" class="input input--fill"/>
+                    </p>
+                    <p class="input__group">
+                        <label for="Content" class="form__label">Content</Label>
+                        <textarea class="input input--multiline input--fill" placeholder="Write something..."></textarea>
+                    </p>
+                    <p class="input__group">
+                        <label for="Tag" class="form__label">Tag</label>
+                        <button type="submit" class="button button--secondary button--border-none"><img src="./Assets/images/plus_black.svg" alt="Add Tag"/> Add</button>
+                    </p>
+                    <p class="input__group">
+                        <label for="Action" class="form__label">Action</label>
+                        <p class="radio__group">
+                            <input class="input__radio" type="radio" name="action" value="No action" checked/>
+                            <label for="No action" class="label__value">No action</label>
+                        </p>
+                        <p class="radio__group">
+                            <input class="input__radio" type="radio" name="action" value="Resolve conversation">
+                            <label for="Reassign teammate" class="label__value">Reassign teammate</label>
+                        </p>
+                        <p class="radio__group">
+                            <input class="input__radio" type="radio" name="action" value="Reassign teammate"/>
+                            <label for="Resolve conversation" class="label__value">Resolve conversation</label>
+                        </p>
+                    </p>
+                    <p class="input__group">
+                        <label for="Available for" class="form__label">Available for</label>
+                        <p class="radio__group">
+                            <input class="input__radio" type="radio" name="Available" value="Everyone" checked/>
+                            <label for="Everyone" class="label__value">Everyone</label>
+                        </p>
+                        <p class="radio__group">
+                            <input class="input__radio" type="radio" name="Available" value="Specific team(s)">
+                            <label for="Specific team(s)" class="label__value">Specific team(s)</label>
+                        </p>
+                        <p class="radio__group">
+                            <input class="input__radio" type="radio" name="Available" value="Reassign teammate"/>
+                            <label for="Myself only" class="label__value">Myself only</label>
+                        </p>
+                    </p>
+                  
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="./Assets/js/main.js"></script>
+</body>
+</html>

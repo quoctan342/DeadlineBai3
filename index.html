@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <nav class="main-menu" id="main-menu">
+            <ul class="menu">
+                <li class="menu__item logo--small">
+                    <div class="menu__img"><img src="./Assets/images/logo.png" alt="Logo"></div>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/inbox.svg" alt="Inbox"></div>
+                    <p>Inbox</p>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/user.svg" alt="User"></div>
+                    <p>Contact</p>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/book-alt.svg" alt="Content"></div>
+                    <p>Content</p>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/chart-bar.svg" alt="Reports"></div>
+                    <p>Reports</p>
+                </li>
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/paper-plane.svg" alt="Growth"></div>
+                    <p>Growth</p>
+                </li>
+                <li id="settings" class="menu__item menu__item--active">
+                    <div class="menu__img"><img src="./Assets/images/cog.svg" alt="Settings"></div>
+                    <p>Settings</p>
+                </li>
+            </ul>
+            <ul class="menu menu--right">
+                <li class="menu__item">
+                    <div class="menu__img"><img src="./Assets/images/bell.svg" alt="Bell"></div>
+                    <div class="menu__content">Notifications</div>
+                </li>
+                <li class="menu__item avatar--small">
+                    <div class="menu__img"><img src="./Assets/images/Avatar.png" alt="Settings"></div>
+                </li>
+            </ul>
+        </nav>
+        <section class="submenu" id="submenu">
+            <button id="showSubmenuButton" class="button__show-submenu button--white button--border-none button--shadow"><img src="./Assets/images/left_arow.svg" alt="Show Submenu"></button>
+            <div class="submenu__header">
+                <h2 class="submenu__title">Settings</h2>
+            </div>
+            <ul class="submenu__body">
+                <li class="submenu__item --active">Canned Responses</li>
+                <li class="submenu__item">Chat widget</li>
+                <li class="submenu__item">Teammate management</li>
+                <li class="submenu__item">Email configuration</li>
+            </ul>
+        </section>
+        <section class="content">
+            <div class="content__header">
+                <h1 class="content__title">Canned Responses</h1>
+            </div>
+            <div class="content__tabs">
+                <div class="content__item content--active">Canned responses</div>
+                <div class="content__item">Categories</div>
+            </div>
+            <div class="content__body">
+                <div class="content__bar mb-20">
+                    <form class="form__search content--fill">
+                        <input type="search" placeholder="Search shortcuts" class="input input__search" />
+                        <img src="./Assets/images/Search.svg" class="form__icon" alt="Search"/>
+                    </form>
+                    <select class="content__selects">
+                        <option value="0">Updated by</option>
+                    </select>
+                    <a href="./create.html" class="button button--primary"><img src="./Assets/images/plus.svg" alt="Create"/> Create canned responses</a>
+                </div>
+                <div class="content__bar --small mb-10">
+                    <p>
+                        <strong>4</strong>
+                        canned responses
+                    <p>
+                    <a href="#" class="content__link content--danger">Delete</a>
+                </div>
+    <table class="table">
+        <tr class="table__header">
+            <th class="table__title"></th>
+            <th class="table__title table--big" id="tableColumnMain">Canned Responses</th>
+            <th class="table__title table--medium">Category</th>
+            <th class="table__title table--medium"><img src="/Assets/images/Subtract.svg" alt="Subtract" class="table__image--small"/> Last updated</th>
+            <th class="table__title table--medium">Updated by</th>
+            <th class="table__title table--medium">Available for</th>
+            <th class="table__title table--small"><img src="/Assets/images/Subtract.svg" alt="Subtract"  class="table__image--small"/> Usage</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="table__data">
+                    <input type="checkbox"/>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">
+                    <div class="table__data--group">
+                        <img src="/Assets/images/icon-image.svg" alt="Icon image"  class="table__image"/> Love looks not with the eyes...    
+                    </div>
+                    <p>
+                        <span class="table__tag">/hello</span>
+
+                    </p>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">Sample Canned Response ...</div>
+            </td>
+            <td>
+                <div class="table__data">Mar 17, 2021</div>
+            </td>
+            <td>
+                <div class="table__data">
+                    <div class="table__data--group">
+                        <img src="/Assets/images/Avatar.png" class="table__image"/> 
+                        Jordyn Calzoni
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">Everyone</div>
+            </td>
+            <td>
+                <div class="table__data">1,024</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="table__data">
+                    <input type="checkbox"/>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">
+                    Love looks not with the eyes...
+                    <p>
+                        <span class="table__tag">/hello</span>
+
+                    </p>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">Sample Canned Response ...</div>
+            </td>
+            <td>
+                <div class="table__data">Mar 17, 2021</div>
+            </td>
+            <td>
+                <div class="table__data">
+                    <div class="table__data--group">
+                        <img src="/Assets/images/Avatar.png" class="table__image"/> 
+                        Jordyn Calzoni
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">Everyone</div>
+            </td>
+            <td>
+                <div class="table__data">1,024</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="table__data">
+                    <input type="checkbox"/>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">
+                    Love looks not with the eyes...
+                    <p>
+                        <span class="table__tag">/hello</span>
+
+                    </p>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">Sample Canned Response ...</div>
+            </td>
+            <td>
+                <div class="table__data">Mar 17, 2021</div>
+            </td>
+            <td>
+                <div class="table__data">
+                    <div class="table__data--group">
+                        <img src="/Assets/images/Avatar.png" class="table__image"/> 
+                        Jordyn Calzoni
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">Everyone</div>
+            </td>
+            <td>
+                <div class="table__data">1,024</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="table__data">
+                    <input type="checkbox"/>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">
+                    Love looks not with the eyes...
+                    <p>
+                        <span class="table__tag">/hello</span>
+
+                    </p>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">Sample Canned Response ...</div>
+            </td>
+            <td>
+                <div class="table__data">Mar 17, 2021</div>
+            </td>
+            <td>
+                <div class="table__data">
+                    <div class="table__data--group">
+                        <img src="/Assets/images/Avatar.png" class="table__image"/> 
+                        Jordyn Calzoni
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="table__data">Everyone</div>
+            </td>
+            <td>
+                <div class="table__data">1,024</div>
+            </td>
+        </tr>
+    </table>
+    </section>
+    </div>
+
+    <script src="./Assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+
+@font-face {
+    font-family: "Gibson";
+    src: url(/Assets/fonts/Gibson-SemiBold/Gibson-SemiBold.ttf);
+}
+
+.content {
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 0px 0px 8px;
+    
+    &__header {
+        height: auto;
+        display: flex;
+        padding: 24px 40px;
+        font-family: 'Gibson', sans-serif;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        text-transform: capitalize;
+        color: #141417;
+    }
+
+    &__tabs {
+        display: flex;
+        padding: 0px 40px;
+        gap: 10px;
+        border-bottom: 1px solid #E0E0E0;
+        padding-bottom: 5px;
+    }
+
+    &__item {
+        padding: 8px 2px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        color: #6B6B7B;
+        cursor: pointer;
+    }
+    &--active {
+        font-weight: 500;
+        font-size: 14px;
+        color: #141417;
+        position: relative;
+    }
+
+    &--active::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        margin-top: 12px;
+        background: #3E6DDA;
+        border-radius: 3px;
+    }
+    
+    &__body {
+        padding: 34px 40px 0 40px;
+        height: 100%;
+
+        &.content--small {
+            padding: 24px 261px 0 261px;
+        }
+    }
+
+    &--space-between {
+        justify-content: space-between;
+    }
+
+    &__bar {
+        display: flex;
+        width: 100%;
+        gap: 8px;
+        justify-content: space-between;
+        
+        &.--small {
+            justify-content: flex-start;
+            gap: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #141417;
+        }
+    }
+
+    &--fill {
+        flex: 1;
+    }
+
+    &__selects {
+        max-width: 160px;
+        width: 100%;
+        padding: 8px 12px;
+        border-radius: 4px;
+        background: #FFFFFF;
+        border: 1px solid #B4B4BE;
+        font-weight: 400;
+        font-size: 14px;
+        color: #141417;
+    }
+    
+    &__link {
+        text-decoration: none;
+    }
+
+    &--danger {
+        color: #EC2B08;
+    }
+}
